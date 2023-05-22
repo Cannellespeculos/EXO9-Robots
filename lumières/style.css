@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Londrina Solid', cursive;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav img {
+    width: 120px;
+    height: 110px;
+}
+
+nav li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+}
+
+nav li img {
+    width: 50px;
+    filter: brightness(0) saturate(100%) invert(94%) sepia(32%) saturate(5379%) hue-rotate(123deg) brightness(92%) contrast(86%);
+}
+
+header nav li:nth-child(1) img {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(58%) saturate(3355%) hue-rotate(239deg) brightness(85%) contrast(130%);
+    ;
+}
+
+header nav li:nth-child(1) a {
+    color: #ff2e6c;
+}
+
+nav li a {
+    font-family: "Londrina Solid", cursive;
+    text-transform: uppercase;
+    color: #0b026a;
+}
+
+header nav li:hover img {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(58%) saturate(3355%) hue-rotate(239deg) brightness(85%) contrast(130%);
+    ;
+}
+
+header nav li:hover a {
+    color: #ff2e6c;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    margin: 0 0 50px 0;
+}
+
+form input {
+    width: 85%;
+    padding: 15px 5px;
+    border: none;
+    background-color: #ff2e6c;
+}
+
+form input::placeholder {
+    color: white;
+}
+
+form button {
+    width: 15%;
+    border: none;
+    background-color: #28dbdb;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+main hr {
+    border-top: 2px dotted #28dbdb;
+    border-right: 2px dotted #28dbdb;
+    border-left: 2px dotted #28dbdb;
+    border-bottom: none;
+    height: 50px;
+    width: 90%;
+}
+
+main section article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main section h1 {
+    color: #0b026a;
+    margin: 0 0 50px 0;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+section img {
+    width: 80%;
+}
+
+section p {
+    color: #0b026a;
+    font-size: 1em;
+    font-weight: 200;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 0 50px 0;
+}
+
+article {
+    border: 2px dotted #28dbdb;
+    padding: 5px;
+    width: 350px;
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 1.1em;
+    color: white;
+    width: 100%;
+    background-color: #28dbdb;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+
+main section article ul {
+    list-style: url(circle-regular.svg);
+    text-align: left;
+    color: #0b026a;
+    font-weight: 200;
+    width: 90%;
+}
+
+section article strong {
+    color: #0b026a;
+    margin: 10px;
+}
+
+section article button {
+    width: 100%;
+    font-family: 'Londrina Solid', cursive;
+    background-color: #ff2e6c;
+    border: none;
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 15px 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: #0b026a;
+    padding: 30px 15px;
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+main section ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    margin: 0 0 40px 0;
+    height: 10px;
+}
+
+footer nav ul li a {
+    color: white;
+
+}
+
+footer img {
+    width: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+    }
+
+    section img {
+        width: 916px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+    }
+
+    main section article ul {
+        flex-direction: column;
+        list-style: url(circle-regular.svg);
+    }
+
+    main section article {
+        margin: 50px 15px;
+    }
+
+    main section ul {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        padding: 10px;
+        list-style: none;
+    }
+
+
+}

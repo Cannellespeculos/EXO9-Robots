@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Londrina Solid', cursive;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/background.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav img {
+    width: 120px;
+    height: 110px;
+}
+
+nav li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+}
+
+nav li img {
+    width: 50px;
+    filter: brightness(0) saturate(100%) invert(94%) sepia(32%) saturate(5379%) hue-rotate(123deg) brightness(92%) contrast(86%);
+}
+
+nav li a {
+    font-family: "Londrina Solid", cursive;
+    text-transform: uppercase;
+    color: #0b026a;
+}
+
+nav li:hover img {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(58%) saturate(3355%) hue-rotate(239deg) brightness(85%) contrast(130%);
+    ;
+}
+
+nav li:hover a {
+    color: #ff2e6c;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 70px 20px
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    margin: 0 0 50px 0;
+}
+
+form input {
+    width: 85%;
+    padding: 15px 5px;
+    border: none;
+    background-color: #ff2e6c;
+}
+
+form input::placeholder {
+    color: white;
+}
+
+form button {
+    width: 15%;
+    border: none;
+    background-color: #28dbdb;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main hr {
+    border-top: 2px dotted #28dbdb;
+    border-right: 2px dotted #28dbdb;
+    border-left: 2px dotted #28dbdb;
+    border-bottom: none;
+    height: 50px;
+    width: 90%;
+}
+
+main section article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+main section article img {
+    width: 50px;
+    filter: brightness(0) saturate(100%) invert(29%) sepia(91%) saturate(2738%) hue-rotate(325deg) brightness(101%) contrast(101%);
+}
+
+main section h2 {
+    color: #0b026a;
+    margin: 0 0 50px 0;
+}
+
+main section article h3 {
+    color: #ff2e6c;
+    margin: 0 0 10px 0;
+}
+
+time {
+    color: #28dbdb;
+    font-size: 2em;
+    margin: 0 0 10px 0
+}
+
+section p {
+    color: #0b026a;
+    font-size: 1em;
+    font-weight: 200;
+    width: 320px;
+}
+
+section article p:last-child {
+    margin: 0 0 50px 0;
+}
+
+.maj {
+    text-transform: uppercase;
+}
+
+section:last-child {
+    text-align: center;
+}
+
+section:last-child h2 {
+    margin: 0;
+}
+
+section:last-child p {
+    margin: 0 0 50px 0;
+}
+
+section:last-child>p {
+    width: 80%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: #0b026a;
+    padding: 30px 15px;
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+footer nav ul li {
+    margin: 0 0 40px 0;
+    height: 10px;
+}
+
+footer nav ul li a {
+    color: white;
+
+}
+
+footer img {
+    width: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    header {
+        height: 400px;
+    }
+
+    main section ul {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        padding: 10px;
+    }
+
+
+}
